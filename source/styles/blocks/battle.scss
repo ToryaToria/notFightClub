@@ -1,7 +1,7 @@
 .battle {
    display: none;
 
-  background-color: rgb(232, 255, 127);
+  // background-color: rgb(232, 255, 127);
 }
 
 .battle__wrapper {
@@ -12,11 +12,16 @@
 
 .battle__img {
   display: block;
+  object-fit: cover;
 
   width: 300px;
   height: 350px;
-  background-color: tomato;
+  // background-color: tomato;
 
   margin-bottom: 20px;
 }
 
+.battle__p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}

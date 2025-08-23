@@ -11,21 +11,25 @@
 <body class="page__body">
   <header class="header container">
     <p>Main</p>
-    <div>
-      <a href=""><img src="" alt=""><span>Home</span></a>
-      <a href=""><img src="" alt=""><span>Character</span></a>
-      <a href=""><img src="" alt=""><span>Settings</span></a>
+    <div class="header__wrapper">
+      <button class="header__btn" type="button" id="header__btn-home">
+        <img src="./images/home.svg" alt="Home" width="15" height="15">
+        <!-- <span>Home</span> -->
+      </button>
+      <button class="header__btn" type="button" id="header__btn-character">
+        <img src="./images/character.svg" alt="Character" width="15" height="15">
+        <!-- <span>Character</span> -->
+      </button>
+
+      <button class="header__btn" type="button" id="header__btn-settings">
+        <img src="./images/settings.svg" alt="Settings" width="15" height="15">
+        <!-- <span>Settings</span> -->
+      </button>
     </div>
   </header>
 
   <main class="main container page__main">
     <h1 class="visually-hidden">Not Fight Club</h1>
-
-    <div class="home">
-      <button class="home__btn" type="button">
-        <span>Fight!</span>
-      </button>
-    </div>
 
     <div class="create container">
       <h2>Create your character</h2>
@@ -36,8 +40,14 @@
           <input class="create__field" type="text">
           <br>
         </label>
-        <button type="submit">Create character</button>
+        <button id="create__btn" class="create__btn" type="submit">Create character</button>
       </form>
+    </div>
+
+    <div class="home">
+      <button class="home__btn" type="button" id="btn-fight">
+        <span>Fight!</span>
+      </button>
     </div>
 
     <div class="settings container">
@@ -52,7 +62,7 @@
 
     <div class="character">
       <div class="character__wrapper">
-        <img class="character__img" src="" alt="герой">
+        <img class="character__img" src="./images/hero-default-1x.webp" alt="герой" width="300" height="350">
         <div>
           <p>тут будет имя</p>
           <p>Wins: <span>0</span></p>
@@ -64,23 +74,23 @@
     <div class="battle">
       <div class="battle__wrapper">
         <div class="my_hero">
-          <p>имя героя</p>
-          <img class="battle__img" src="" alt="">
+          <p class="battle__p">имя героя</p>
+          <img class="battle__img" src="./images/hero-default-1x.webp" alt="герой" width="300" height="350">
           <form class="progress" action="">
             <input class="battle__progress progress__intut" type="range">
             <div class="progress__outer">
               <div class="progress__inner"></div>
             </div>
           </form>
-          <p><span>150</span>/<span>150</span></p>
+          <p class="battle__p"><span>150</span>/<span>150</span></p>
         </div>
 
         <div class="fight">
-          <p>Please pick 1 Attack zone and 2 Defence zones</p>
+          <p class="battle__p">Please pick 1 Attack zone and 2 Defence zones</p>
           <form action="">
             <div class="fight__wrapper">
               <div class="fight__attack">
-                <p>Attack Zones</p>
+                <p class="battle__p">Attack Zones</p>
                 <div class="fight__box">
                   <label for="">
                     <span>Head</span>
@@ -110,7 +120,7 @@
               </div>
 
               <div class="fight__defence">
-                <p>Defence Zones</p>
+                <p class="battle__p">Defence Zones</p>
                 <div class="fight__box">
                   <label for="">
                     <span>Head</span>
@@ -139,25 +149,27 @@
                 </div>
               </div>
             </div>
-            <button class="fight__btn" type="submit">Attack!</button>
+            <button id="btn-attack" class="fight__btn" type="submit">Attack!</button>
           </form>
         </div>
 
         <div class="rival">
-          <p>имя соперника</p>
-          <img class="battle__img" alt="">
+          <p class="battle__p">имя соперника</p>
+          <img class="battle__img" alt="" src="./images/SnowTroll-1x.webp" width="300" height="350">
           <form class="progress" action="">
             <input class="battle__progress progress__intut" type="range">
             <div class="progress__outer">
               <div class="progress__inner"></div>
             </div>
           </form>
-          <p><span>150</span>/<span>150</span></p>
+          <p class="battle__p"><span>150</span>/<span>150</span></p>
         </div>
       </div>
 
     </div>
   </main>
+
+  <script src="./scripts/main.js" type="module"></script>
 </body>
 
 </html>
