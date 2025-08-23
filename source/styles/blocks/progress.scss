@@ -1,0 +1,17 @@
+.progress__intut {
+display: none;
+}
+
+.progress__outer {
+  height:15px;
+  width: 100%;
+  background-color: green;
+  border-radius: 5px;
+}
+
+.progress__inner {
+  height:15px;
+  width: 70%;
+  background-color: tomato;
+  border-radius: 5px;
+}

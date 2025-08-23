@@ -14,23 +14,16 @@
 @import "./base/container";
 
 // Blocks ---------------------------------
+@import "./blocks/create.scss";
 @import "./blocks/header.scss";
-@import "./blocks/logo.scss";
-@import "./blocks/nav.scss";
-@import "./blocks/welcome.scss";
-@import "./blocks/button.scss";
-@import "./blocks/visiting.scss";
-@import "./blocks/explore.scss";
-@import "./blocks/video.scss";
-@import "./blocks/gallery.scss";
-@import "./blocks/tickets.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/footer.scss";
-@import "./blocks/form.scss";
-@import "./blocks/social.scss";
-@import "./blocks/overlay.scss";
-@import "./blocks/slider-explore.scss";
-@import "./blocks/mo-form.scss";
+@import "./blocks/settings.scss";
+@import "./blocks/character.scss";
+@import "./blocks/battle.scss";
+@import "./blocks/fight.scss";
+@import "./blocks/progress.scss";
+@import "./blocks/home.scss";
+
+
 
 
 

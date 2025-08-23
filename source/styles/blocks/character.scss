@@ -1,0 +1,20 @@
+.character {
+  display: none;
+  
+  // height: 100vh;
+ 
+  background-color: rgb(127, 193, 255);
+}
+
+.character__img {
+  display: block;
+
+  width: 300px;
+  height: 350px;
+  background-color: tomato;
+}
+
+.character__wrapper {
+  display: flex;
+  gap: 20px;
+}

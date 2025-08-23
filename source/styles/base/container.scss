@@ -1,29 +1,9 @@
 .container {
   box-sizing: border-box;
-  // max-width: $large-width;
-  // width: $large-width;
-
-  margin: 0 auto;
-  padding-left: 240px;
-  padding-right: 240px;
-
-    @media (max-width: 1680px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  @include media-desktop {
-    padding-left: 20px;
-    padding-right: 20px;
-    // width: $desktop-width;
-    max-width: $desktop-width;
-  }
-
-  @include media-tablet {
-    max-width: $tablet-width;
-  }
-
-  @include media-mobile {
-    min-width: $min-width;
-  }
-}
+   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  // background-color:  red;
+}   

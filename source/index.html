@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Create</title>
+  <title>Not Fight Club</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
-<body>
-  <header>
+<body class="page__body">
+  <header class="header container">
     <p>Main</p>
     <div>
       <a href=""><img src="" alt=""><span>Home</span></a>
@@ -17,126 +17,143 @@
       <a href=""><img src="" alt=""><span>Settings</span></a>
     </div>
   </header>
-  <main>
-    <h1>Not Fight Club</h1>
 
-    <div class="create">
+  <main class="main container page__main">
+    <h1 class="visually-hidden">Not Fight Club</h1>
+
+    <div class="home">
+      <button class="home__btn" type="button">
+        <span>Fight!</span>
+      </button>
+    </div>
+
+    <div class="create container">
       <h2>Create your character</h2>
       <form action="">
         <label for="">
           <span>Create your character</span>
-          <input type="text">
+          <br>
+          <input class="create__field" type="text">
+          <br>
         </label>
         <button type="submit">Create character</button>
       </form>
     </div>
 
-    <div class="main">
-      <button>
-        <span>Fight!</span>
-      </button>
-    </div>
-
-    <div class="settings">
+    <div class="settings container">
       <form action="">
         <label for="">
           <span>Player Name:</span>
-          <input type="text">
+          <input class="settings__field" type="text">
         </label>
         <button type="submit">Edit!</button>
       </form>
     </div>
 
     <div class="character">
-      <img src="" alt="герой">
-      <div>
-        <p>тут будет имя</p>
-        <p>Wins: <span>0</span></p>
-        <p>Loses: <span>0</span></p>
+      <div class="character__wrapper">
+        <img class="character__img" src="" alt="герой">
+        <div>
+          <p>тут будет имя</p>
+          <p>Wins: <span>0</span></p>
+          <p>Loses: <span>0</span></p>
+        </div>
       </div>
     </div>
 
     <div class="battle">
-      <div class="my_hero">
-        <p>имя героя</p>
-        <img src="" alt="">
-        <form action="">
-          <input type="range">
-        </form>
-        <p><span>150</span>/<span>150</span></p>
-      </div>
-
-      <div class="fight">
-        <p>Please pick 1 Attack zone and 2 Defence zones</p>
-        <form action="">
-          <div>
-            <div class="attack">
-              <p>Attack Zones</p>
-              <label for="">
-                <span>Head</span>
-                <input type="radio">
-              </label>
-
-              <label for="">
-                <span>Neck</span>
-                <input type="radio">
-              </label>
-
-              <label for="">
-                <span>Body</span>
-                <input type="radio">
-              </label>
-
-              <label for="">
-                <span>Belly</span>
-                <input type="radio">
-              </label>
-
-              <label for="">
-                <span>Legs</span>
-                <input type="radio">
-              </label>
+      <div class="battle__wrapper">
+        <div class="my_hero">
+          <p>имя героя</p>
+          <img class="battle__img" src="" alt="">
+          <form class="progress" action="">
+            <input class="battle__progress progress__intut" type="range">
+            <div class="progress__outer">
+              <div class="progress__inner"></div>
             </div>
+          </form>
+          <p><span>150</span>/<span>150</span></p>
+        </div>
 
-            <div class="defence">
-              <p>Defence Zones</p>
-              <label for="">
-                <span>Head</span>
-                <input type="radio">
-              </label>
+        <div class="fight">
+          <p>Please pick 1 Attack zone and 2 Defence zones</p>
+          <form action="">
+            <div class="fight__wrapper">
+              <div class="fight__attack">
+                <p>Attack Zones</p>
+                <div class="fight__box">
+                  <label for="">
+                    <span>Head</span>
+                    <input type="radio">
+                  </label>
 
-              <label for="">
-                <span>Neck</span>
-                <input type="radio">
-              </label>
+                  <label for="">
+                    <span>Neck</span>
+                    <input type="radio">
+                  </label>
 
-              <label for="">
-                <span>Body</span>
-                <input type="radio">
-              </label>
+                  <label for="">
+                    <span>Body</span>
+                    <input type="radio">
+                  </label>
 
-              <label for="">
-                <span>Belly</span>
-                <input type="radio">
-              </label>
+                  <label for="">
+                    <span>Belly</span>
+                    <input type="radio">
+                  </label>
 
-              <label for="">
-                <span>Legs</span>
-                <input type="radio">
-              </label>
+                  <label for="">
+                    <span>Legs</span>
+                    <input type="radio">
+                  </label>
+                </div>
+              </div>
+
+              <div class="fight__defence">
+                <p>Defence Zones</p>
+                <div class="fight__box">
+                  <label for="">
+                    <span>Head</span>
+                    <input type="radio">
+                  </label>
+
+                  <label for="">
+                    <span>Neck</span>
+                    <input type="radio">
+                  </label>
+
+                  <label for="">
+                    <span>Body</span>
+                    <input type="radio">
+                  </label>
+
+                  <label for="">
+                    <span>Belly</span>
+                    <input type="radio">
+                  </label>
+
+                  <label for="">
+                    <span>Legs</span>
+                    <input type="radio">
+                  </label>
+                </div>
+              </div>
             </div>
-          </div>
-          <button type="submit">Attack!</button>
-        </form>
-      </div>
+            <button class="fight__btn" type="submit">Attack!</button>
+          </form>
+        </div>
 
-      <div class="rival">
-        <p>имя соперника</p>
-        <img src="" alt="">
-        <form action="">
-          <input type="range">
-        </form>
-        <p><span>150</span>/<span>150</span></p>
+        <div class="rival">
+          <p>имя соперника</p>
+          <img class="battle__img" alt="">
+          <form class="progress" action="">
+            <input class="battle__progress progress__intut" type="range">
+            <div class="progress__outer">
+              <div class="progress__inner"></div>
+            </div>
+          </form>
+          <p><span>150</span>/<span>150</span></p>
+        </div>
       </div>
 
     </div>

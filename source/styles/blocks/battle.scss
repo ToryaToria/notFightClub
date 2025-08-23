@@ -1,0 +1,22 @@
+.battle {
+   display: none;
+
+  background-color: rgb(232, 255, 127);
+}
+
+.battle__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.battle__img {
+  display: block;
+
+  width: 300px;
+  height: 350px;
+  background-color: tomato;
+
+  margin-bottom: 20px;
+}
+
