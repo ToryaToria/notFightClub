@@ -34,10 +34,10 @@
     <div class="create container">
       <h2>Create your character</h2>
       <form action="">
-        <label for="">
+        <label for="name">
           <span>Create your character</span>
           <br>
-          <input class="create__field" type="text">
+          <input class="create__field" type="text" id="name">
           <br>
         </label>
         <button id="create__btn" class="create__btn" type="submit">Create character</button>
@@ -53,10 +53,10 @@
     <div class="settings container">
       <form action="">
         <label for="">
-          <span>Player Name:</span>
-          <input class="settings__field" type="text">
+          <span>Player Name:</span> <span id="name-hero-settings">имя</span>
+          <input class="settings__field" type="text" id="name-setting-field">
         </label>
-        <button type="submit">Edit!</button>
+        <button type="button" id="btn-edit">Edit!</button>
       </form>
     </div>
 
@@ -64,7 +64,7 @@
       <div class="character__wrapper">
         <img class="character__img" src="./images/hero-default-1x.webp" alt="герой" width="300" height="350">
         <div>
-          <p>тут будет имя</p>
+          <p id="heroName">тут будет имя</p>
           <p>Wins: <span>0</span></p>
           <p>Loses: <span>0</span></p>
         </div>
@@ -74,7 +74,7 @@
     <div class="battle">
       <div class="battle__wrapper">
         <div class="my_hero">
-          <p class="battle__p">имя героя</p>
+          <p class="battle__p" id="heroNameBattle">имя героя</p>
           <img class="battle__img" src="./images/hero-default-1x.webp" alt="герой" width="300" height="350">
           <form class="progress" action="">
             <input class="battle__progress progress__intut" type="range">
@@ -154,7 +154,7 @@
         </div>
 
         <div class="rival">
-          <p class="battle__p">имя соперника</p>
+          <p class="battle__p">Злодей</p>
           <img class="battle__img" alt="" src="./images/SnowTroll-1x.webp" width="300" height="350">
           <form class="progress" action="">
             <input class="battle__progress progress__intut" type="range">

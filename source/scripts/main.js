@@ -1,4 +1,7 @@
 const createBtn = document.querySelector('#create__btn');
+// const myStorage = window.localStorage;
+// console.log(nameField);
+
 
 const headerBtnHome = document.querySelector('#header__btn-home');
 const headerBtnCharacter = document.querySelector('#header__btn-character');
@@ -6,6 +9,7 @@ const headerBtnSettings = document.querySelector('#header__btn-settings');
 
 const btnFight = document.querySelector('#btn-fight');
 const btnAttack = document.querySelector('#btn-attack');
+const btnEdit = document.querySelector('#btn-edit');
 
 const create = document.querySelector('.create')
 const home = document.querySelector('.home')
@@ -13,12 +17,34 @@ const character = document.querySelector('.character');
 const settings = document.querySelector('.settings')
 const battle = document.querySelector('.battle')
 
-console.log('ky');
+const nameField = document.querySelector('#name');
+const nameSettingField = document.querySelector('#name-setting-field');
+
+const nameHeroSettings= document.querySelector('#name-hero-settings')
+
+let nameHero = '';
 
 createBtn.addEventListener('click', (e) => {
   e.preventDefault();
+  localStorage.setItem('name', nameField.value);
+  nameHero = localStorage.getItem('name');
+  console.log(nameHero);
+
+  document.querySelector('#heroName').textContent = nameHero;
+  document.querySelector('#heroNameBattle').textContent = nameHero;
+
+    nameHeroSettings.textContent = nameHero;
+
+
   create.classList.add('closer');
   home.classList.add('open');
+
+});
+
+btnEdit.addEventListener('click', () => {
+nameSettingField.classList.add('open');
+nameHeroSettings.textContent = '';
+  btnEdit.textContent = 'Save';
 
 });
 

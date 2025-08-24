@@ -30,7 +30,7 @@
     "optimize:raster": "gulp optimizeRaster",
     "optimize:vector": "gulp optimizeVector",
     "test-pp": "node run-test.js",
-    "test-menu": "backstop test --config=\"test-config/backstop-test-menu.config.js\"",
+    "test-menu": "backstop test --config=\"test-config/backstop-test-menu.condeployfig.js\"",
     "test-swiper": "backstop test --config=\"test-config/backstop-test-swiper.config.js\"",
     "test-05": "backstop test --config=\"test-config/backstop-test-05.config.json\"",
     "test-08": "backstop test --config=\"test-config/backstop-test-08.config.json\"",
